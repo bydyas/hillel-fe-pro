@@ -1,14 +1,16 @@
-function recurse(n) {
-    if (n === 1) return n;
-    else return n + " " + recurse(n - 1);
-}
-console.log(recurse(5).split(" ").reverse().join(" "));
+let num = +prompt("Enter a digit num:", "");
 
-function sumNumRecursion(rec) {
+function outputDigitNum(n) {
+    if (n === 1) return n;
+    else return outputDigitNum(n - 1) + " " + n;
+}
+console.log(outputDigitNum(num));
+
+function sumNumRecursion(strOfNum) {
     let sum = 0;
-    rec.split(" ").forEach(numbers => {
+    strOfNum.split(" ").forEach(numbers => {
         sum += +numbers;
     });
     console.log(`Сумма чисел: ${sum}`);
 }
-sumNumRecursion(recurse(5));
+sumNumRecursion(outputDigitNum(num));
