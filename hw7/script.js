@@ -8,11 +8,11 @@ function outputDigitNum(n) {
 }
 console.log(outputDigitNum(num));
 
-function sumNumRecursion(strOfNum) {
+function sumDigitNum(strOfNum) {
     let sum = 0;
     strOfNum.split(" ").forEach(numbers => {
         sum += +numbers;
     });
     console.log(`Сумма чисел: ${sum}`);
 }
-sumNumRecursion(outputDigitNum(num));
+sumDigitNum(outputDigitNum(num));
