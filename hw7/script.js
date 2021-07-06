@@ -1,4 +1,6 @@
-let num = +prompt("Enter a digit num:", "");
+do {
+    var num = +prompt("Enter a digit num:", "");
+} while(isNaN(num))
 
 function outputDigitNum(n) {
     if (n === 1) return n;
