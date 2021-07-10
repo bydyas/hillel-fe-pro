@@ -23,9 +23,9 @@ function calcTotalRevenue(arrOfNums, total) {
     let sum = 0;
 
     arrOfNums.forEach(num => {
-        sum += +num;
+        sum += num;
     });
-    
+
     total.textContent = 'Total:' + sum;
 }
 calcTotalRevenue(convertToLongNum(tdRevenueValues), totalRevenue);
