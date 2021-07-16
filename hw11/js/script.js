@@ -4,8 +4,8 @@ const toDoListContainer = document.querySelector('#toDoListContainer');
 let counter = 0;
 
 function createNewItem(input, parent) {
-    const itemsLimit = 10;
-    const lenLimit = 35;
+    const itemsLimit = 10; // mutable
+    const lenLimit = 35; // mutable
     let str = input.value;
 
     if (str.replace(/\s/g, '').length && str !== '' && str.length < lenLimit && counter < itemsLimit) {
