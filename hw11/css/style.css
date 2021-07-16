@@ -62,6 +62,31 @@ body {
     border-radius: 8px;
 }
 
+.is-focused-to-anim::before {
+    animation: 0.8s linear focusToTopBef infinite;
+}
+.is-focused-to-anim::after {
+    animation: 0.8s linear focusToTopAft infinite;
+}
+
+@keyframes focusToTopBef {
+    from {
+        top: -10px;
+    }
+    to {
+        top: -20px;
+    }
+}
+
+@keyframes focusToTopAft {
+    from {
+        top: -20px;
+    }
+    to {
+        top: -30px;
+    }
+}
+
 #inputNewItem {
     padding: 15px 70px 15px 15px;
     width: 100%;

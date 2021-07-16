@@ -36,3 +36,12 @@ btnAddNewItem.onclick = (e) => {
     e.preventDefault();
     createNewItem(inputNewItem, toDoListContainer);
 };
+
+// To animate the pseudo of #form by focusing input el;
+inputNewItem.addEventListener('focus', () => {
+    document.querySelector('#form').classList.add('is-focused-to-anim');
+});
+
+inputNewItem.addEventListener('blur', () => {
+    document.querySelector('#form').classList.remove('is-focused-to-anim');
+});
