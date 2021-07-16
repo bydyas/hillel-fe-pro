@@ -6,31 +6,6 @@ body {
     font: 400 18px/1 'Lato', 'Arial', sans-serif;
 }
 
-/* .bg {
-    display: block;
-    width: 100vw;
-    height: 20vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -2;
-    background: content-box url('https://checkyeti.imgix.net/images/optimized/crossing-the-alps-in-a-hot-air-balloon-mountain-ballooning-6.jpg?auto=format,compress&fit=crop&crop=focalpoint&h=550&w=1919&fp-y=0.5&dpr=1&q=45');
-}
-
-.bg::before {
-    content: '';
-    display: block;
-    width: 100vw;
-    height: 20vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    background: #551a8b;
-    opacity: 0.5;
-    box-shadow: inset 0 -20px 50px -6px #ecf3f9;
-} */
-
 .wrapper {
     margin: 0 auto;
     padding: 0 15px 0;
