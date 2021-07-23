@@ -1,20 +1,13 @@
-const removeAttrBtn = document.querySelector('#removeAttrBtn');
-const setGreenBtn = document.querySelector('#setGreenBtn');
-const addRowBtn = document.querySelector('#addRowBtn');
-const removeSecondRowBtn = document.querySelector('#removeSecondRowBtn');
-const tdRevenueValues = document.querySelectorAll('td[data-id="revenue-value"]');
-const totalRevenue = document.querySelector('#summ');
-
 document.addEventListener('DOMContentLoaded', () => {
     const title = document.querySelector('#title');
     title.classList.add('title-size');
 });
 
 function load() {
-    removeAttrBtn.addEventListener('click', removeAttr, false);
-    setGreenBtn.addEventListener('click', setGreenBg, true);
-    addRowBtn.addEventListener('click', addRow, false);
-    removeSecondRowBtn.addEventListener('click', removeSecRow, false);
+    document.querySelector('#removeAttrBtn').addEventListener('click', removeAttr, false);
+    document.querySelector('#setGreenBtn').addEventListener('click', setGreenBg, true);
+    document.querySelector('#addRowBtn').addEventListener('click', addRow, false);
+    document.querySelector('#removeSecondRowBtn').addEventListener('click', removeSecRow, false);
 }
 
 function setYear() {
@@ -68,10 +61,12 @@ function setGreenBg(e) {
     });
 }
 
-function calcTotalRevenue(listOfAbbreviatedNums, total) {
+function calcTotalRevenue() {
+    const tdRevenueValues = document.querySelectorAll('td[data-id="revenue-value"]');
+    const totalRevenue = document.querySelector('#summ');
     let sum = 0;
 
-    Array.from(listOfAbbreviatedNums).forEach(value => {
+    Array.from(tdRevenueValues).forEach(value => {
         let abbNum = value.textContent;
 
         if (abbNum[abbNum.length - 1] === 'M') { 
@@ -83,6 +78,6 @@ function calcTotalRevenue(listOfAbbreviatedNums, total) {
         }
     });
 
-    total.textContent = 'Total:' + sum;
+    totalRevenue.textContent = 'Total:' + sum;
 }
-calcTotalRevenue(tdRevenueValues, totalRevenue);
+calcTotalRevenue();
