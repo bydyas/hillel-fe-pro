@@ -1,34 +1,36 @@
-const counterDefValue = document.querySelector('#counterDefaultValue').value;
+document.querySelector('#createCounterBtn').onclick = () => {
+    let counterDefaultValue = document.querySelector('#counterDefaultValue').value;
+    const activeCounter = count();
 
-function count(val) {
-    return function () {
-       return val++;
+    function count() {
+        let counter = counterDefaultValue;
+        return function () {
+            return ++counter;
+        }
+    }
+
+    if (!isNaN(+counterDefaultValue) && counterDefaultValue.replace(/\s/g, '').length) {
+
+        const li = document.createElement('li');
+        li.classList.add('counter');
+
+        const span = document.createElement('span');
+        span.setAttribute('id', 'counterCurrentValue');
+        span.textContent = counterDefaultValue;
+
+        const btn = document.createElement('button');
+        btn.setAttribute('id', 'countBtn');
+        btn.textContent = 'Count';
+        btn.onclick = (e) => {
+            e.stopPropagation();
+            span.textContent = activeCounter();
+        };
+
+        li.append(span, btn);
+        document.querySelector('.counter-container').append(li);
+
     }
 }
-const c = count(counterDefValue + 1);
-
-function createCounterNode() {
-    let li = document.createElement('li');
-    li.classList.add('counter');
-
-    let span = document.createElement('span');
-    span.setAttribute('id', 'counterCurrentValue');
-    span.textContent = counterDefValue;
-
-    let btn = document.createElement('button');
-    btn.setAttribute('id', 'countBtn');
-    btn.textContent = 'Count';
-
-    btn.onclick = () => {
-        span.textContent = c();
-    };
-
-    li.append(span);
-    li.append(btn);
-    document.querySelector('.counter-container').append(li);
-}
-
-document.querySelector('#createCounterBtn').onclick = createCounterNode;
 
 function arrayFill(filler, amount) {
     let arr = [];
