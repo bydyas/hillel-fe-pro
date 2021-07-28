@@ -1,3 +1,4 @@
+// Task #3
 document.querySelector('#createCounterBtn').onclick = () => {
     let counterDefaultValue = document.querySelector('#counterDefaultValue').value;
     const activeCounter = count();
@@ -32,6 +33,7 @@ document.querySelector('#createCounterBtn').onclick = () => {
     }
 }
 
+// Task #1
 function arrayFill(filler, amount) {
     let arr = [];
 
@@ -43,6 +45,7 @@ function arrayFill(filler, amount) {
 }
 console.log(arrayFill('x', 5)); // ["x", "x", "x", "x", "x"]
 
+// Task #2
 function sumOfArr2D(arr) {
     let sum = 0;
     arr.forEach(num => {
