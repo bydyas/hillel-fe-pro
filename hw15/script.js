@@ -26,3 +26,30 @@ const friends = [
     new Person('Bartolomeo', 'Wilson'),
     new Person('Karl', 'Gustav'),
 ]
+
+// Task #2
+function Calculator(initValue) {
+    this.value = initValue;
+    this.sum = function (addValue) {
+        return this.value += addValue;
+    };
+    this.mult = function (addValue) {
+        return this.value *= addValue;
+    };
+    this.sub = function (addValue) {
+        return this.value -= addValue;
+    };
+    this.div = function (addValue) {
+        return this.value /= addValue;
+    };
+    this.set = function (addValue) {
+        return this.value = addValue;
+    };
+}
+const calc = new Calculator(10);
+
+console.log(calc.sum(5)); /// 15
+console.log(calc.mult(10)); // 150
+console.log(calc.sub(40)); // 110
+console.log(calc.div(10)); // 11
+console.log(calc.set(100)); //
