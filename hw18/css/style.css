@@ -1,0 +1,175 @@
+body {
+    font: 400 24px/24px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 360px;
+    height: 100vh;
+}
+
+.authentication-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-area {
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.logo-container {
+    padding: 10px;
+    background-color: #000;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 8pt 16pt rgb(0 0 0 / 40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    overflow: hidden;
+    width: 64px;
+}
+
+.logo *{
+    fill: #fff;
+}
+
+#login-form {
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.input-login-label {
+    font-size: 12px;
+}
+
+.login-with {
+    margin: 16px;
+    margin-left: 0;
+    font-size: 14px;
+}
+
+#inputUserLogin{
+    padding: 8px 0;
+    height: 40px;
+    width: 328px;
+    font: 400 18px/24px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 0;
+    border-bottom: 2px solid #000;
+    outline: 0;
+    transition: all 300ms ease;
+}
+
+.error-border {
+    border-bottom-color: #CC0000;
+}
+
+#error-alert {
+    font-size: 12px;
+    line-height: 1.2;
+    color: transparent;
+    margin-top: 10px;
+}
+
+#loginBtn {
+    width: 328px;
+    height: 56px;
+    color: #fff;
+    font-size: 18px;
+    font-family: Arial;
+    background-color: #000;
+    border: 0;
+}
+
+.cookie-popup {
+    margin: 10px 0;
+    padding: 10px 13px;
+    position: fixed;
+    bottom: -300px;
+    right: calc(50% - 75%/2);
+    width: 75%;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    line-height: 30.8px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 1.5s ease-in-out;
+}
+
+.btn-container {
+    justify-self: self-end;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.cookie-popup button {
+    padding: 5px;
+    margin-left: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-family: Arial;
+    background-color: #000;
+    border: 2px solid #fff;
+}
+
+.active {
+    bottom: 0;
+}
+
+.welcome-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 360px;
+    padding: 10px;
+    text-align: center;
+}
+
+.welcome-inner {
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.welcome-popup .logo * {
+    fill: #000;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.btn-drive {
+    margin-top: 10px; 
+    border: 0;
+    background-color: transparent;
+}
+
+.btn-drive svg {
+    width: 64px;
+    height: 64px;
+}
+
+.btn-drive:hover svg * {
+    fill: #FFC72C;
+}
