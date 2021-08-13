@@ -1,6 +1,9 @@
 window.addEventListener('DOMContentLoaded', () => {
 
     class CookieConsent {
+
+        cookieExpiresTime = { expires: new Date(Date.now() + 86400e3 * 365).toUTCString() };
+
         constructor({ name, popup, btnConfirm, btnCancel, activeClass = '' } = {}) {
             this.popup = document.querySelector(popup);
             this.btnConfirm = document.querySelector(btnConfirm);
@@ -40,17 +43,17 @@ window.addEventListener('DOMContentLoaded', () => {
             document.cookie = updatedCookie;
         }
 
-        hasConsented = () => {
+        hasConsented() {
             return this.getItem(this.consentPropertyType) === 'true' ? true : false;
         }
 
-        changeStatus = (prop) => {
-            this.setItem(this.consentPropertyType, prop);
+        changeStatus(prop) {
+            this.setItem(this.consentPropertyType, prop, this.cookieExpiresTime);
 
             if (this.hasConsented()) {
                 // Any 'accept' actions
                 document.querySelector('#loginBtn').addEventListener('click', () => {
-                    this.setItem('user_login', document.querySelector('#inputUserLogin').value);
+                    this.setItem('user_login', document.querySelector('#inputUserLogin').value, this.cookieExpiresTime);
                     showWelcomePopUp();
                 });
 
@@ -65,7 +68,7 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        bindTriggers = () => {
+        bindTriggers() {
             this.btnConfirm.addEventListener('click', () => {
                 this.changeStatus(true);
                 this.popup.classList.remove(this.activeClass);
@@ -77,7 +80,7 @@ window.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        init = () => {
+        init() {
             try {
                 if (this.hasConsented()) {
                     showWelcomePopUp();
