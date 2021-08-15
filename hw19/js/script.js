@@ -68,13 +68,16 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     stop() {
-      clearInterval(this.timer);
+      clearInterval(this.timeTimer);
+      clearInterval(this.dateTimer);
     }
 
     start() {
       this.getTime();
       this.getDate();
-      this.timer = setInterval(() => this.getTime(), 1000);
+
+      this.timeTimer = setInterval(() => this.getTime(), 1000);
+      this.dateTimer = setInterval(() => this.getDate(), 1000 * 60 * 60 * 24);
     }
   }
 

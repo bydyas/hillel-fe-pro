@@ -8,14 +8,30 @@
 
 body {
     font: 400 82px/1 'Digital7';
+    background: url("https://cdn.pixabay.com/photo/2019/05/18/13/34/twigs-4211837__340.jpg");
+}
+
+body::before {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 100vh;
     background-color: #000;
+    opacity: 0.5;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
 }
 
 .wrapper {
     margin: 0 auto;
-    width: 360px;
+    min-width: 360px;
+    max-width: 360px;
     height: 100vh;
     position: relative;
+    background-color: #000;
+    opacity: 0.7;
 }
 
 .clock {
