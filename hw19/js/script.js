@@ -28,31 +28,8 @@ window.addEventListener('DOMContentLoaded', () => {
     getDate() {
       let date = new Date();
 
-      let day = date.getDay();
-      switch (day) {
-        case 0:
-          day = 'SAT';
-          break;
-        case 1:
-          day = 'MON';
-          break;
-        case 2:
-          day = 'TUE';
-          break;
-        case 3:
-          day = 'WED';
-          break;
-        case 4:
-          day = 'THU';
-          break;
-        case 5:
-          day = 'FRI';
-          break;
-        case 6:
-          day = 'SUN';
-          break;
-      }
-
+      let day = date.getDate();
+      
       let month = date.getMonth() + 1;
       if (month < 10) month = '0' + month;
 
