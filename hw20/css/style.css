@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+    font: 400 16px/32px "Roboto", "Arial", "Helvetica", sans-serif;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 600px;
+}
+
+.form {
+    border-bottom-right-radius: 5px;
+    padding: 15px 10px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    background-color: #019879;
+}
+
+.form > input,
+.form > .btn {
+    padding-left: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    font: 400 16px/32px "Roboto", "Arial", "Helvetica", sans-serif;
+}
+
+.form > .btn {
+    margin: 10px auto 0;
+    width: 120px;
+    background-color: #fff;
+    text-transform: uppercase;
+}
+
+.table {
+    margin-top: 10px;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 0;
+    text-align: center;
+    border: 1px solid #fff;
+    background-color: lightgray;
+}
+
+th {
+    background-color: #019879;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #fff;
+}
