@@ -1,7 +1,8 @@
+const BTN_ADD_TODO = document.querySelector("#btnAddNewItem");
+const INPUT_TODO_ITEM = document.querySelector('#inputNewItem');
 const TODOS_TEMPLATE = document.querySelector("#todosTemplate").innerHTML;
 const TODOS_CONTAINER = document.querySelector("#todosContainer");
-const TODOS_AMOUNT_TO_SHOW = 100; // configure by yourself
-const BTN_ADD_TODO = document.querySelector("#btnAddNewItem");
+const TODOS_AMOUNT_TO_SHOW = 15; // configure by yourself
 
 
 window.addEventListener('DOMContentLoaded', getData, false);
@@ -59,8 +60,8 @@ function sendData() {
         method: 'POST',
         body: JSON.stringify({
             userId: 1,
-            id: 3,
-            title: "fugiat veniam minus",
+            id: 201,
+            title: INPUT_TODO_ITEM.value,
             completed: false
         }),
         headers: {
@@ -72,10 +73,10 @@ function sendData() {
 }
 
 // To animate the pseudo of #form by focusing input el;
-document.querySelector('#inputNewItem').addEventListener('focus', () => {
+INPUT_TODO_ITEM.addEventListener('focus', () => {
     document.querySelector('#form').classList.add('is-focused-to-anim');
 });
 
-document.querySelector('#inputNewItem').addEventListener('blur', () => {
+INPUT_TODO_ITEM.addEventListener('blur', () => {
     document.querySelector('#form').classList.remove('is-focused-to-anim');
 });
