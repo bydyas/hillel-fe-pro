@@ -12,7 +12,10 @@ TODOS_CONTAINER.addEventListener('click', (e) => {
     deleteTodo(e);
 }, false);
 
-BTN_ADD_TODO.addEventListener('click', sendData, false);
+BTN_ADD_TODO.addEventListener('click', (e) => {
+    e.preventDefault();
+    sendData();
+}, false);
 
 
 function getData() {
