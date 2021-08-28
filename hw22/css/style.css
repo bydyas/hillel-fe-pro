@@ -54,3 +54,10 @@ body {
 .icon-area > figcaption {
     text-transform: capitalize;
 }
+
+.stat-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -35,6 +35,7 @@ function renderData(data) {
     document.querySelector('#w-country').textContent = data["sys"].country;
     document.querySelector('#w-city').textContent = data.name + ",";
     document.querySelector('#w-temp').textContent = convertToCelsius(data["main"].temp);
+    document.querySelector('#w-wind').textContent = data["wind"].speed + " m/c";
     document.querySelector('#w-icon').src = `http://openweathermap.org/img/wn/${data["weather"][0].icon}@2x.png`;
     document.querySelector('#w-icon-caption').textContent = data["weather"][0].description;
 }
