@@ -1,6 +1,6 @@
 const WEATHER_CITY = document.querySelector(".input");
 const CONFIG = {
-    key: "f9973fd6345f17cc2ab87535eac0f145", // unmutable
+    key: "f9973fd6345f17cc2ab87535eac0f145", // unmutable!
     city: "Bilbao", // by default
     lang: "en",
     units: "standard" // standard(K), metric(C), imperial(F)
@@ -13,6 +13,7 @@ WEATHER_CITY.addEventListener('change', () => {
         setCity(WEATHER_CITY.value);
         getData(CONFIG.city, CONFIG.key, CONFIG.lang, CONFIG.units);
     }
+    WEATHER_CITY.value = "";
 });
 
 function setCity(newCity) {
