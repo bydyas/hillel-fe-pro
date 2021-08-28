@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    font: 400 16px/32px 'Lato', 'Arial', sans-serif;
+    background-color: ivory;
+}
+
+.weather-holder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.form {
+    width: 40%;
+    border: 2px solid lightblue;
+    border-bottom: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #fff;
+}
+
+.input{
+    text-align: center;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    font: 400 14px/1 'Lato', 'Arial', sans-serif;
+    background-color: #fff;
+}
+
+.weather-item {
+    width: 330px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: lightblue;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+}
+
+.icon-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-area > img {
+    width: 100px;
+}
+
+.icon-area > figcaption {
+    text-transform: capitalize;
+}
