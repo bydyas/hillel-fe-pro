@@ -1,7 +1,7 @@
 const WEATHER_CITY = document.querySelector(".input");
 const CONFIG = {
     key: "f9973fd6345f17cc2ab87535eac0f145", // unmutable!
-    city: "Bilbao", // by default
+    city: "Malmo", // by default
     lang: "en",
     units: "standard" // standard(K), metric(C), imperial(F)
 }
@@ -20,15 +20,21 @@ function setCity(newCity) {
     CONFIG.city = newCity;
 }
 
-function getData(city, key, lang, units) {
+async function getData(city, key, lang, units) {
+    let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&lang=${lang}&units=${units}`);
+    let weather = await response.json();
+    renderData(weather);
+}
+
+/* function getData(city, key, lang, units) {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&lang=${lang}&units=${units}`)
         .then(res => res.json())
         .then(json => renderData(json))
         .catch(error => console.log(error));
-}
+} */
 
 function convertToCelsius(K) {
-    return Math.round((K- 273.15) * 10) / 10 + " ℃";
+    return Math.round((K - 273.15) * 10) / 10 + " ℃";
 }
 
 function renderData(data) {
