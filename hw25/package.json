@@ -1,0 +1,22 @@
+{
+  "name": "my-first-node-project",
+  "version": "1.0.0",
+  "description": "hillel/hw25",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bydyas/hillel-fe-pro.git"
+  },
+  "author": "Bogdan Shkaran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bydyas/hillel-fe-pro/issues"
+  },
+  "homepage": "https://github.com/bydyas/hillel-fe-pro#readme",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}
