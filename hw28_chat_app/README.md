@@ -1,5 +1,7 @@
 # the echo Chat App based on wss://fep-app.herokuapp.com/ #
 
+![Hillel Logo](https://tickikids.ams3.cdn.digitaloceanspaces.com/z1.cache/gallery/organizations/3296/icon_social_5aa57f3ca6fe27.72752956.jpg)
+
 ## Необходимо написать полноценный проект веб приложения - Чат. Проект обязательно должен быть NPM пакетом и собираться с помощью Webpack. ##
 
 **Для выполнения задания будет необходимо:**
@@ -23,7 +25,8 @@
 
 **Формат сообщения которые отправляем/принимаем:**
 
-```{
+```
+{
     type: "message",
     payload: {
         username: "John",
