@@ -1,0 +1,11 @@
+Free WS Echo servers:
+
+ws://ws.ifelse.io/ (public echo server, sends message only to one client)
+
+wss://fep-app.herokuapp.com/ (echo server was started by Hillel teacher, sends messages to all clients)
+
+- - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Figma Template:
+
+https://xdfile.com/chat-dashboard-figma-freebie/
