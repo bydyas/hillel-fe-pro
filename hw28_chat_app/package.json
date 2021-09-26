@@ -2,7 +2,6 @@
   "name": "hw28_chat_app",
   "version": "1.0.0",
   "description": "the echo chat app based on wss://fep-app.herokuapp.com/",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",

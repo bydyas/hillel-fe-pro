@@ -26,7 +26,9 @@ module.exports = {
             //css
             { test: /\.css$/, use: ['style-loader', 'css-loader'] },
             //images
-            { test: /\.(svg|ico|png|webp|jpg|gif|jpeg)$/, type: 'asset/resource' }
+            { test: /\.(svg|ico|png|webp|jpg|gif|jpeg)$/, type: 'asset/resource' },
+            // fonts
+            { test: /\.(woff|woff2|eot|ttf|otf)$/, type: 'asset/resource' },
             // !babel
         ],
     },
