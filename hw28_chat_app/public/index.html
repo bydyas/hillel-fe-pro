@@ -25,7 +25,7 @@
                             </a>
                         </li>
                         <li class="menu-item upcase">
-                            <a href="#">
+                            <a href="#" class="active-link">
                                 <i class="fas fa-comment-dots icon-margin"></i>
                                 <span>chat</span>
                             </a>
@@ -64,6 +64,43 @@
                 </div>
             </div>
         </aside>
+
+        <main class="main">
+            <div class="widget-container">
+
+                <div class="weather-holder">
+                    <h2 class="title">Weather</h2>
+                    <form action="#" class="form">
+                        <i class="fas fa-search i-abs-pos"></i>
+                        <input class="input-weather" tabindex="1" placeholder="City" type="text">
+                    </form>
+                    <div class="weather-item">
+                        <div class="location-area">
+                            <span id="w-city"></span>
+                            <span id="w-country"></span>
+                        </div>
+                        <div class="icon-area">
+                            <img id="w-icon" src="#" alt="icon">
+                            <figcaption id="w-icon-caption"></figcaption>
+                        </div>
+                        <div class="stat-area">
+                            <span id="w-temp"></span>
+                            <span id="w-wind"></span>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="clock-holder">
+                    <h2 class="title">Time</h2>
+                    <div id="time"></div>
+                    <div id="date"></div>
+                </div>
+
+            </div>
+            <div class="chat-container">
+
+            </div>
+        </main>
 
     </div>
 

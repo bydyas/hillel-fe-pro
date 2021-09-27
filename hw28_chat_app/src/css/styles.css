@@ -3,14 +3,24 @@ body {
     font: 700 16px/1 'TT Norms', Arial, Helvetica, sans-serif;
 }
 
-.upcase {
-    text-transform: uppercase;
+.wrapper {
+    padding: 30px;
+    display: flex;
 }
 
+/*
+    styles.css contains:
+        - aside styles
+        - main styles
+            - widget
+            - chat
+        - common styles
+*/
+
+/* aside styles */
+
 .sidebar {
-    padding: 30px;
-    max-width: 290px;
-    min-width: 200px;
+    width: 295px;
     background-color: #E6ECFE;
 }
 
@@ -18,7 +28,7 @@ body {
     padding: 60px 0px;
     background-color: #FAFBFF;
     border-radius: 8px;
-    height: calc(100vh - 90px - 50px - 60px);
+    height: calc(100vh - 120px - 60px);
     color: #707C97;
     display: flex;
     flex-direction: column;
@@ -42,11 +52,11 @@ body {
 .user-name {
     font-size: 1.125em;
     font-weight: 500;
-    color: #000;
+    color: #0D1C2E;
 }
 
 .menu {
-    padding: 0 0 0 40px;
+    padding: 0 40px 0;
     list-style: none;
 }
 
@@ -64,7 +74,7 @@ body {
 }
 
 .icon-margin {
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 .sidebar-log {
@@ -81,4 +91,42 @@ body {
 
 .sidebar-log > a:hover {
     letter-spacing: 0.2em;
+}
+
+/* widget styles */
+
+.main {
+    width: 100%;
+    padding-top: 70px;
+    display: flex;
+}
+
+.widget-container {
+    padding: 0 80px 0px 60px;
+    width: 400px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 2.25em;
+    color: #0D1C2E;
+}
+
+/* chat styles */
+
+.chat-container {
+    width: 100%;
+    height: calc(100vh - 60px - 70px);
+    border-radius: 8px;
+    background-color: #FAFBFF;
+}
+
+/* common styles */
+
+.upcase {
+    text-transform: uppercase;
+}
+
+a.active-link {
+    color: #2A8BF2;
 }
