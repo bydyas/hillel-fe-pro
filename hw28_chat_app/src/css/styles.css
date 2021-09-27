@@ -1,0 +1,84 @@
+body {
+    background-color: #E6ECFE;
+    font: 700 16px/1 'TT Norms', Arial, Helvetica, sans-serif;
+}
+
+.upcase {
+    text-transform: uppercase;
+}
+
+.sidebar {
+    padding: 30px;
+    max-width: 290px;
+    min-width: 200px;
+    background-color: #E6ECFE;
+}
+
+.sidebar-holder {
+    padding: 60px 0px;
+    background-color: #FAFBFF;
+    border-radius: 8px;
+    height: calc(100vh - 90px - 50px - 60px);
+    color: #707C97;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user-bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    margin-bottom: 50px;
+}
+
+.main-user-photo {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.user-name {
+    font-size: 1.125em;
+    font-weight: 500;
+    color: #000;
+}
+
+.menu {
+    padding: 0 0 0 40px;
+    list-style: none;
+}
+
+.menu-item {
+    margin-bottom: 15%;
+}
+
+.menu-item > a {
+    color: #707C97;
+    transition: all 500ms;
+}
+
+.menu-item > a:hover {
+    letter-spacing: 0.2em;
+}
+
+.icon-margin {
+    margin-right: 20px;
+}
+
+.sidebar-log {
+    padding-left: 40px;
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-end;
+}
+
+.sidebar-log > a {
+    color: #707C97;
+    transition: all 500ms;
+}
+
+.sidebar-log > a:hover {
+    letter-spacing: 0.2em;
+}

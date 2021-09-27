@@ -2,22 +2,22 @@
 
 @font-face {
     font-family: 'TT Norms';
-    src: url('./fonts/TTNorms-Bold.eot');
-    src: local('./fonts/TT Norms Bold'), local('./fonts/TTNorms-Bold'),
-        url('./fonts/TTNorms-Bold.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/TTNorms-Bold.woff') format('woff'),
-        url('./fonts/TTNorms-Bold.ttf') format('truetype');
+    src: url('../fonts/TTNorms-Bold.eot');
+    src: local('../fonts/TT Norms Bold'), local('../fonts/TTNorms-Bold'),
+        url('../fonts/TTNorms-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTNorms-Bold.woff') format('woff'),
+        url('../fonts/TTNorms-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'TT Norms';
-    src: url('./fonts/TTNorms-Medium.eot');
-    src: local('./fonts/TT Norms Medium'), local('./fonts/TTNorms-Medium'),
-        url('./fonts/TTNorms-Medium.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/TTNorms-Medium.woff') format('woff'),
-        url('./fonts/TTNorms-Medium.ttf') format('truetype');
+    src: url('../fonts/TTNorms-Medium.eot');
+    src: local('../fonts/TT Norms Medium'), local('../fonts/TTNorms-Medium'),
+        url('../fonts/TTNorms-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTNorms-Medium.woff') format('woff'),
+        url('../fonts/TTNorms-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }

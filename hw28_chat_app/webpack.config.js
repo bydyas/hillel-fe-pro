@@ -10,6 +10,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "[name].[contenthash].js",
+        assetModuleFilename: 'assets/[name][ext]',
         clean: true
     },
     devtool: 'inline-source-map',
@@ -17,7 +18,7 @@ module.exports = {
         static: path.resolve(__dirname, 'dist'),
         port: 5001, // default 8080
         open: true,
-        hot: false, // !true
+        hot: false, // !was true
         liveReload: true
     },
     //loaders
