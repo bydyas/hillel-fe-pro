@@ -1,0 +1,37 @@
+:root {
+    --main-bg-color: #e6ecfe;
+    --section-bg-color: #FFFFFF;
+    --add-color: #2a8bf2;
+    --def-font-color: #0d1c2e;
+    --menu-font-color: #707c97;
+    --chat-head-color: #fafbff;
+    --grad-first-color: #7CB8F7;
+    --grad-second-color: #2a8bf2;
+    --mine-bg-msg-color: #fff;
+    --input-border-color: rgba(112, 124, 151, 0.75);
+}
+
+html[data-theme="dark"] {
+    --main-bg-color: #121212;
+    --section-bg-color: rgba(255, 255, 255, 0.38);
+    --add-color: #BB86FC;
+    --def-font-color: rgba(255, 255, 255, 0.6);
+    --menu-font-color: rgba(255, 255, 255, 0.6);
+    --chat-head-color: #979797;
+    --grad-first-color: #979797;
+    --grad-second-color: #979797;
+    --mine-bg-msg-color: #BB86FC;
+    --input-border-color: #BB86FC;
+}
+
+html {
+    transition: color 300ms, background-color 300ms;
+}
+
+#theme-switcher {
+    border: 0;
+    background-color: transparent;
+    color: var(--menu-font-color);
+    cursor: pointer;
+    font-size: 1.2em;
+}

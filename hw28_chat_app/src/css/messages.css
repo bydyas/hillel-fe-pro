@@ -9,11 +9,11 @@
 }
 
 .message {
-    padding: 5px 10px;
+    padding: 10px;
     max-width: 320px;
     text-align: justify;
-    background: linear-gradient(#7CB8F7, #2A8BF2);
-    color: #fff;
+    background: linear-gradient(var(--grad-first-color), var(--grad-second-color));
+    color: var(--def-font-color);
     font-weight: 500;
     font-size: 0.9em;
     overflow-wrap: break-word;
@@ -28,8 +28,8 @@
 }
 
 .is-mine > .message {
-    background: #fff;
-    color: #0d1c2e;
+    background: var(--mine-bg-msg-color);
+    color: var(--def-font-color);
     border: 1px solid rgba(112, 124, 151, 0.75);
     border-radius: 8px;
     border-bottom-right-radius: 0;

@@ -10,7 +10,7 @@
     outline: 0;
     border: 0;
     border-radius: 8px;
-    background-color: #FFFFFF;
+    background-color: var(--section-bg-color);
     font-family: "TT Norms";
     font-weight: 500;
     font-size: 1.125em;
@@ -23,7 +23,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: linear-gradient(#7CB8F7, #2A8BF2);
+    background: linear-gradient(var(--grad-first-color), var(--grad-second-color));
     border-radius: 8px;
 }
 
@@ -53,7 +53,7 @@
     background-color: transparent;
     border: 0;
     font-size: 1.5em;
-    color: #707C97;
+    color: var(--menu-font-color);
     position: absolute;
     top: 22px;
     left: 15px;
