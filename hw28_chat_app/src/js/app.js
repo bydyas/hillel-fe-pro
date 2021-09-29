@@ -3,6 +3,8 @@ import '../css/fonts.css'
 import '../css/styles.css'
 import '../css/weather.css'
 import '../css/clock.css'
+import '../css/messages.css'
+import '../css/scrollbar.css'
 import '@fortawesome/fontawesome-free/css/all.css'
 
 import { renderData } from '../js/weather.js'

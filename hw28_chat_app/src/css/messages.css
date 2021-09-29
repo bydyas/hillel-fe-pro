@@ -1,0 +1,41 @@
+.msg-holder {
+    display: flex;
+/*     border: 1px solid black; */
+}
+
+.sender-photo {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.message {
+    padding: 5px 10px;
+    max-width: 320px;
+    text-align: justify;
+    background: linear-gradient(#7CB8F7, #2A8BF2);
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.9em;
+    overflow-wrap: break-word;
+    border-radius: 8px;
+    border-top-left-radius: 0px;
+    box-shadow: 10px 10px 25px rgba(112, 124, 151, 0.25);
+}
+
+.is-mine {
+    justify-self: right;
+    flex-direction: row-reverse;
+}
+
+.is-mine > .message {
+    background: #fff;
+    color: #0d1c2e;
+    border: 1px solid rgba(112, 124, 151, 0.75);
+    border-radius: 8px;
+    border-bottom-right-radius: 0;
+}
+
+.is-mine > .sender-photo {
+    align-self: flex-end;
+    margin: 0 0 0 10px;
+}
