@@ -1,0 +1,47 @@
+:root {
+  --tile-size: 70px;
+}
+body {
+  background-color: lightskyblue;
+}
+.main {
+  width: 100vh;
+  height: 100vh;
+  margin: 0 auto;
+}
+.game-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.tiles-container {
+  margin: 0 auto;
+  width: calc(var(--tile-size) * 4 + 24px);
+  display: flex;
+  flex-wrap: wrap;
+  outline: 9px solid blueviolet;
+  background-color: aquamarine;
+  font-size: 23px;
+  font-weight: 700;
+  color: blueviolet;
+}
+.control-panel {
+  width: 100px;
+}
+.tile {
+  height: var(--tile-size);
+  width: var(--tile-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+#counter,
+.btn {
+  padding: 5px;
+  border-radius: 8px;
+  font-size: 2rem;
+  background-color: blueviolet;
+  color: #fff;
+}
