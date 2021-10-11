@@ -55,7 +55,9 @@ body {
     margin-bottom: 50px;
 }
 
-.main-user-photo {
+.user-bio svg {
+    width: 96px;
+    width: 96px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
@@ -153,9 +155,11 @@ body {
     flex-direction: column;
 }
 
-.group-photo {
+.group-info svg {
+    width: 54px;
+    width: 54px;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .group-name {
@@ -164,7 +168,7 @@ body {
 }
 
 .connect-status {
-    color: var(--add-color);
+    color: red;
     line-height: 0;
 }
 
@@ -218,7 +222,7 @@ body {
     border-bottom-right-radius: 8px;
 }
 
-.input-msg {
+#input-msg {
     padding: 15px 0;
     overflow-y: auto;
     width: 100%;
@@ -230,9 +234,9 @@ body {
     background-color: var(--chat-head-color);
 }
 
-.send-msg-btn {
+#send-msg-btn {
     position: absolute;
-    top: 5px;
+    top: 10px;
     right: 10px;
     width: 40px;
     height: 40px;

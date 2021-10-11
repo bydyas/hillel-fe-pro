@@ -1,9 +1,11 @@
-.msg-holder {
+#msg-holder {
     display: flex;
 /*     border: 1px solid black; */
 }
 
-.sender-photo {
+#msg-holder svg {
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     margin-right: 10px;
 }
@@ -38,4 +40,13 @@
 .is-mine > .sender-photo {
     align-self: flex-end;
     margin: 0 0 0 10px;
+}
+
+.msg-text-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.msg-text-info span {
+    line-height: 0;
 }

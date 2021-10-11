@@ -8,14 +8,21 @@
 </head>
 <body>
     
+    <div id="login">
+        <div class="login-container">
+            <h2>Hello,</h2>
+            <input placeholder="User" class="login-input-user-name" type="text">
+            <button class="btn-login">Log In</button>
+        </div>
+    </div>
+
     <div class="wrapper">
 
         <aside class="sidebar">
             <div class="sidebar-holder">
                 <div class="sidebar-info">
                     <div class="user-bio">
-                        <img class="main-user-photo" width=96 height=96 src="https://avatarfiles.alphacoders.com/125/thumb-125043.jpg" alt="main-user-photo">
-                        <figcaption class="user-name">Hengry Jabbawockiez</figcaption>
+                        <figcaption class="user-name">Jorse Garcia</figcaption>
                     </div>
                     <ul class="menu">
                         <li class="menu-item upcase">
@@ -70,10 +77,10 @@
 
                 <div class="weather-holder">
                     <h2 class="title">Weather</h2>
-                    <form action="#" class="form">
+                    <div class="form">
                         <button class="i-abs-pos"><i class="fas fa-search"></i></button>
                         <input class="input-weather" tabindex="1" placeholder="City" type="text">
-                    </form>
+                    </div>
                     <div class="weather-item">
                         <div class="location-area">
                             <span id="w-city"></span>
@@ -100,10 +107,9 @@
             <div class="chat-container">
                 <header class="chat-header">
                     <div class="group-info">
-                        <img class="group-photo" width=54 height=54 src="https://avatarfiles.alphacoders.com/125/thumb-125043.jpg" alt="group-photo">
                         <div class="add-info">
                             <span class="group-name">fep-app.herokuapp.com</span>
-                            <span class="connect-status online">&bull; online</span>
+                            <span class="connect-status">offline</span>
                         </div>
                     </div>
                     <div class="config-btns">
@@ -113,46 +119,25 @@
                     </div>
                 </header>
                 <div class="get-messages-container">
-
-                    <div class="msg-holder">
-                        <img class="sender-photo" width=36 height=36 src="https://avatarfiles.alphacoders.com/125/thumb-125043.jpg" alt="sender-photo">
-                        <p class="message">Hello! Finally found the time to write to you) I need your help in creating interactive animations for my mobile application.</p>
-                    </div>
-
-                    <div class="msg-holder is-mine">
-                        <img class="sender-photo" width=36 height=36 src="https://avatarfiles.alphacoders.com/125/thumb-125043.jpg" alt="sender-photo">
-                        <p class="message">Hello! Finally found the time to write to you) I need your help in creating interactive animations for my mobile application.</p>
-                    </div>
-
-                    <div class="msg-holder">
-                        <img class="sender-photo" width=36 height=36 src="https://avatarfiles.alphacoders.com/125/thumb-125043.jpg" alt="sender-photo">
-                        <p class="message">Hello! Finally found the time to write to you) I need your help in creating interactive animations for my mobile application.</p>
-                    </div>
-
-                    <div class="msg-holder is-mine">
-                        <img class="sender-photo" width=36 height=36 src="https://avatarfiles.alphacoders.com/125/thumb-125043.jpg" alt="sender-photo">
-                        <p class="message">Hello! Finally found the time to write to you) I need your help in creating interactive animations for my mobile application.</p>
-                    </div>
-
-                    <div class="msg-holder">
-                        <img class="sender-photo" width=36 height=36 src="https://avatarfiles.alphacoders.com/125/thumb-125043.jpg" alt="sender-photo">
-                        <p class="message">Hello! Finally found the time to write to you) I need your help in creating interactive animations for my mobile application.</p>
-                    </div>
-
-                    <div class="msg-holder">
-                        <img class="sender-photo" width=36 height=36 src="https://avatarfiles.alphacoders.com/125/thumb-125043.jpg" alt="sender-photo">
-                        <p class="message">Hello! Finally found the time to write to you) I need your help in creating interactive animations for my mobile application.</p>
-                    </div>
-
+                    <!-- !MESSAGES -->
                 </div>
                 <div class="send-messages-container">
-                    <textarea placeholder="Type a message here" class="input-msg"></textarea>
-                    <button class="send-msg-btn"><i class="fas fa-paper-plane"></i></button>
+                    <textarea placeholder="Type a message here" id="input-msg"></textarea>
+                    <button id="send-msg-btn"><i class="fas fa-paper-plane"></i></button>
                 </div>
             </div>
         </main>
 
     </div>
+
+    <script type="text/template" id="msgTemplate">
+        <div id="msg-holder" class="{{is-mine}}">
+            <div class="msg-text-info">
+                <span>{{payload.username}}</span>
+                <p class="message">{{payload.message}}</p>
+            </div>
+        </div>
+    </script>
 
 </body>
 </html>

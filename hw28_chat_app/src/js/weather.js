@@ -19,10 +19,17 @@ function setCity(newCity) {
     CONFIG.city = newCity;
 }
 
-async function getData(city, key, lang) {
+/* async function getData(city, key, lang) {
     let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&lang=${lang}`);
     let weather = await response.json();
     renderData(weather);
+} */
+
+function getData(city, key, lang) {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&lang=${lang}`)
+        .then(res => res.json())
+        .then(json => renderData(json))
+        .catch(error => console.log(error));
 }
 
 function convertToCelsius(K) {

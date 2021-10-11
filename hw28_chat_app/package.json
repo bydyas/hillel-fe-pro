@@ -21,6 +21,8 @@
     "webpack-dev-server": "^4.2.1"
   },
   "dependencies": {
+    "@dicebear/avatars": "^4.9.1",
+    "@dicebear/micah": "^4.9.1",
     "@fortawesome/fontawesome-free": "^5.15.4"
   }
 }
